@@ -61,6 +61,7 @@ To deploy the stack, use the following steps:
    ![get all](./get_all.png)
 
 4.  **Check ingress**:
+   List defined endpoints in ingress
    ```bash
 	kubectl describe ingress -n project-management-app
    ```
