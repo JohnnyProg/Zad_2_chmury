@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+  namespace: project-management-app
+data:
+  APP_API_URL: http://192.168.49.2
+  SPRING_DATASOURCE_URL: jdbc:postgresql://postgres-service:5432/expense_tracker
+  SPRING_DATASOURCE_USERNAME: admin
