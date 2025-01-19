@@ -61,10 +61,10 @@ To deploy the stack, use the following steps:
    ![get all](./get_all.png)
 
 4.  **Check ingress**:
-  ```bash
+   ```bash
 	kubectl describe ingress -n project-management-app
-  ```
- ![describe ingress](./describe_ingress.png)
+   ```
+   ![describe ingress](./describe_ingress.png)
 
 
 5. **Access Services**:
@@ -72,12 +72,12 @@ To deploy the stack, use the following steps:
      ```bash
      curl $(minikube ip)
      ```
-   ![curl frontend](./curl_frontend.png)
+     ![curl frontend](./curl_frontend.png)
    - **Backend API**: Access the backend service via:
      ```bash
      curl $(minikube ip)/api/v1
      ```
-   ![curl backend](./curl_backend.png)
+     ![curl backend](./curl_backend.png)
 
 ## 3. Results
 
