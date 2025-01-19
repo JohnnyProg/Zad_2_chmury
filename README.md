@@ -16,9 +16,11 @@ This project demonstrates the deployment of a LAMP stack-like architecture in Ku
 3. The backend API is available at `/api/v1`.
 4. Kubernetes manifests include configurations for Namespaces, Deployments, Services, ConfigMaps, Secrets, StatefulSets, and Ingress resources.
 
-### Image source
+### Image repositories
+
 *Backend image*
 ![backend repository](./backend_image.png)
+
 *Frontend image*
 ![frontend repository](./frontend_image.png)
 
@@ -58,14 +60,14 @@ To deploy the stack, use the following steps:
    ```
    ![get all](./get_all.png)
 
-  **Check ingress**:
+4.  **Check ingress**:
   ```bash
 	kubectl describe ingress -n project-management-app
   ```
  ![describe ingress](./describe_ingress.png)
 
 
-. **Access Services**:
+5. **Access Services**:
    - **Frontend**: Access the static page via:
      ```bash
      curl $(minikube ip)
